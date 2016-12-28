@@ -94,4 +94,6 @@ export default database.define('user', {
     type: Sequelize.DATE,
     field: 'feed_last_modified'
   }
+}, {
+  underscored: true
 });
