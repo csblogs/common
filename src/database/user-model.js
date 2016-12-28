@@ -1,5 +1,5 @@
 import Sequelize from 'sequelize';
-import { database } from '../';
+import { database } from '../database';
 
 const URI = Sequelize.STRING(2048);
 
