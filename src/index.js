@@ -1,4 +1,12 @@
-export { initDbLogger, database } from './database';
-export { BlogPost } from './database/post-model';
-export { User } from './database/user-model';
-export { UserSchema } from './database/user-schema';
+import {initDbLogger, database } from './database';
+import User from './database/user-model';
+import BlogPost from './database/post-model';
+import UserSchema from './database/user-schema';
+
+export {
+  initDbLogger,
+  database,
+  User,
+  UserSchema,
+  BlogPost
+};
