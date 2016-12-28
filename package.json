@@ -1,0 +1,35 @@
+{
+  "name": "csblogs-common",
+  "version": "1.0.0",
+  "description": "Content to share between repositories",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "postinstall": "babel src/ -d dist/",
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csblogs/common.git"
+  },
+  "author": "Rob Crocombe <me@robcrocombe.com> (http://robcrocombe.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csblogs/common/issues"
+  },
+  "homepage": "https://github.com/csblogs/common#readme",
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "pg": "^6.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.28.0"
+  }
+}
