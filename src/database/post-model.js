@@ -4,7 +4,7 @@ import User from './user-model';
 
 const URI = Sequelize.STRING(2048);
 
-const blogPostDatabaseDefinition = database.define('blog_post', {
+const BlogPost = database.define('blog_post', {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
@@ -56,4 +56,4 @@ blogPostDatabaseDefinition.belongsTo(User, {
   }
 });
 
-export default blogPostDatabaseDefinition;
+export default BlogPost;

@@ -3,7 +3,7 @@ import { database } from '../database';
 
 const URI = Sequelize.STRING(2048);
 
-export default database.define('user', {
+const User = database.define('user', {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
@@ -97,3 +97,5 @@ export default database.define('user', {
 }, {
   underscored: true
 });
+
+export default User;
