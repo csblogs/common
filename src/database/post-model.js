@@ -46,14 +46,4 @@ const BlogPost = database.define('blog_post', {
   underscored: true
 });
 
-blogPostDatabaseDefinition.belongsTo(User, {
-  as: 'author',
-  onDelete: 'CASCADE',
-  foreignKey: {
-    name: 'authorId',
-    field: 'author_id',
-    allowNull: false
-  }
-});
-
 export default BlogPost;
